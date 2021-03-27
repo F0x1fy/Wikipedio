@@ -233,26 +233,15 @@ public static function CreateArticle (Article $article) {
 	        mysqli_free_result($result);
 	        
 	        DBConnector::CloseConnection($conn);
-	        
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
+
 	        Log::info("ArticleDAO: Searching for all articles with : " . $search);
-=======
->>>>>>> 3d200cda5312af1eb84039a7b2122db46748581b
->>>>>>> Stashed changes
+
 	        return $articles;
 	    }
 	    
 	    catch (Exception $e) {
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
 	        Log::error("ArticleDAO: Error searching for articles with  ".$search.": " . $e->getMessage());
-=======
->>>>>>> 3d200cda5312af1eb84039a7b2122db46748581b
->>>>>>> Stashed changes
-	        echo $e->getMessage();
+
 	        return None;
 	    }
 	}

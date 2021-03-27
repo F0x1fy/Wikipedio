@@ -36,13 +36,7 @@ class SecurityService{
         return ArticleDAO::CreateArticle($article);
     }
     public static function searchArticles(String $search){
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
         Log::info("Security service: Searching for all articles with : " . $search);
-=======
->>>>>>> 3d200cda5312af1eb84039a7b2122db46748581b
->>>>>>> Stashed changes
         return ArticleDAO::ArticleSearch($search);
     }
 }
